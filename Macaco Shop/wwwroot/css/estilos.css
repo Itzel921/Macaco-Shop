@@ -18,45 +18,29 @@ header a:hover {
 
 
 
-/*------------ INDEX---------------*/
-
-/*Titulo y parrafo inicial*/
-.titulo {
-    margin-top: 80px;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-.titulo h4{
-    font-weight: 600;
-}
-
-.titulo p{
-    font-size: 25px;
-}
-
-
-
-
-
-
-
 
 /*-----------cards-------------*/
 
 .tarjeta-verde {
     background-color: #a3ff99;
-    border-radius: 25px; 
-    padding: 30px; 
-    width: 100%; 
-    aspect-ratio: 3 / 2; 
+    border-radius: 20px; 
+    padding: 15px;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
 }
+
+    /* Efecto: la tarjeta se levanta un poquito al pasar el mouse */
+    .tarjeta-verde:hover {
+        transform: translateY(-5px);
+    }
 
 .caja-blanca {
     background-color: #ffffff;
-    border: 1px solid #555555;
-    border-radius: 15px;
+    border: none; 
+    border-radius: 12px;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Garantiza que el macaco llene el espacio sin apachurrarse */
 }
